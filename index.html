@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Lottery</title>
+</head>
+<body>
+    <div>
+       <h2> While loop</h2>
+        <h2 class="whileLoop"></h2>
+        <h2>For loop</h2>
+        <h2 class= "forLoop"></h2>
+    </div>
+
+    <script>
+        //For loop
+        let displayReponse2 = document.querySelector(".forLoop");
+        for ( let index = 1; index <= 6; index++) {
+            let randomNum2 = Math.floor(Math.random()*50);
+            let randomNumStr2 = `${randomNum2}`;
+            console.log(randomNumStr2)
+            displayReponse2.innerHTML += `${randomNumStr2}, `; 
+            console.log(randomNumStr2);
+        }
+
+       
+
+       //While Loop
+       let displayReponse = document.querySelector(".whileLoop");
+      let index = 1;
+       while (index <= 6) {
+            let randomNum = Math.floor(Math.random()*50);
+            let randomNumStr = `${randomNum}`;
+            console.log(randomNumStr)
+            displayReponse.innerHTML += `${randomNumStr}, `; 
+            index++
+        }
+        
+
+    </script>
+</body>
+</html>
